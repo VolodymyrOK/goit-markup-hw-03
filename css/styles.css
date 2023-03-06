@@ -1,0 +1,245 @@
+:root {
+    --color-main: #434455;
+    --color-main-bg: #fff;
+    --color-hero-title: #fff;
+    --color-button: #FFF;
+    --color-primary-brand: #4D5AE5;
+    --color-title: #2E2F42;
+    --color-pressed: #404BBF;
+    --hero-background: #2E2F42;
+    --footer-background: #2E2F42;
+    --color-section-bg: #F4F4FD;
+    --color-footer-logo: #F4F4FD;
+    --color-footer-text: #E7E9FC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--color-main);
+    background-color: var(--color-main-bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* Logo */
+
+.logo {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24/18);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+.logo-brand {
+    color: var(--color-primary-brand);
+}
+
+.top-nav {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: calc(24/16);
+    color: var(--color-title);
+}
+
+.top-nav:is(:hover, :focus) {
+    color: var(--color-pressed);
+}
+
+.top-nav-address {
+    font-style: normal;
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+    color: var(--color-main);
+}
+
+.top-nav-address:is(:hover, :focus) {
+    color: var(--color-pressed);
+}
+
+.current {
+    color: var(--color-pressed);
+}
+
+/* Main */
+
+.main {
+    background-color: var(--hero-background);
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(60/50);
+    letter-spacing: 0.02em;
+    color: var(--color-hero-title);
+}
+
+.main-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24/16);
+    letter-spacing: 0.04em;
+    color: var(--color-button);
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+
+.main-button:hover,
+.main-button:focus {
+    background-color: var(--color-pressed);
+    cursor: pointer;
+}
+
+/* Features */
+
+.features {
+    background-color: var(--color-main-bg);
+}
+
+.features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+}
+
+.features-text {
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+}
+
+/* Our works */
+
+.works {
+    background-color: var(--color-main-bg);
+}
+
+.works-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40/36);
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-title)
+}
+
+/* Our team */
+
+.team {
+    background-color: var(--color-section-bg);
+    ;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40/36);
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-title);
+}
+
+.team-card {
+    background-color: var(--color-main-bg);
+}
+
+.team-card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+}
+
+.team-card-descr {
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--footer-background);
+}
+
+.logo-footer {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(21/18);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-footer-logo);
+}
+
+.footer-descr {
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+    color: var(--color-footer-text);
+}
+
+/* Portfolio */
+
+.filtr-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24/16);
+    letter-spacing: 0.04em;
+    color: var(--color-primary-brand);
+    background-color: var(--color-section-bg);
+    border: 1px solid var(--color-footer-text);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.actual,
+.filtr-button:is(:hover, :focus) {
+    color: var(--color-button);
+    background-color: var(--color-pressed);
+}
+
+.portfolio-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+}
+
+.portfolio-descr {
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+    color: var(--color-main);
+}
