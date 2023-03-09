@@ -380,15 +380,14 @@ body {
 
 /* ======== PORTFOLIO ======== */
 .portfolio {
-    padding-top: 0;
+    padding-top: 96px;
 }
 
 .portfolio-btn-list {
     display: flex;
     justify-content: center;
 
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .portfolio-btn-item+.portfolio-btn-item {
@@ -398,7 +397,7 @@ body {
 .portfolio-btn {
     padding: 12px 24px;
 
-    color: var(--color-primary-brand);
+    color: var(--primary-brand);
     background-color: var(--color-section-bg);
 
     font-family: inherit;
